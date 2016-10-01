@@ -3,7 +3,9 @@
 background-color: #5bbbd3;
 	
 }
-
+#smallLogo{
+	margin-top: 20px;
+}
 #footer{
 background-color: #5bbbd3;
 padding: 20px;
@@ -54,3 +56,18 @@ background-color:moccasin;
 	height:150px;
 	margin:15px 0 15px 0;
 }
+
+#adoptionb{
+	margin-bottom: 30px;
+}
+
+#catbutton{
+	padding-left:30px;
+}
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
