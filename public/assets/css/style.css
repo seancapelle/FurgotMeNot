@@ -1,7 +1,8 @@
 #header{
 
 background-color: #5bbbd3;
-	
+border-bottom: solid 5px white;
+
 }
 #smallLogo{
 	margin-top: 20px;
@@ -31,8 +32,9 @@ background-color:moccasin;
 }
 
 #dog1{
-	padding-left: 20px;
+	padding-bottom: 20px;
 	margin-top: 20px;
+
 }
 
 #menu{
@@ -71,3 +73,16 @@ background-color:moccasin;
       width: 70%;
       margin: auto;
   }
+
+#about{
+	font-family: 'Gochi Hand', cursive;
+
+}
+#dg1{
+	margin-bottom: 20px;
+}
+#furry{
+	font-family: 'Gochi Hand', cursive;
+	text-align: center;
+
+}
