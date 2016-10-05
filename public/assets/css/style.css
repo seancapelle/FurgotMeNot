@@ -135,8 +135,10 @@ background-color:moccasin;
 	margin-bottom: 20px;
 }
 
-#furryImg{
-	width:400px;
-	margin-left:10%;
-	margin-bottom: 20px;
+#searchB{
+	background-color: black;
+	color:white;
+	float: right;
+	margin-right: 90px;
+
 }
