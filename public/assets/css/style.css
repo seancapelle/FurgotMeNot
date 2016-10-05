@@ -1,0 +1,144 @@
+#header{
+
+background-color: #5bbbd3;
+border-bottom: solid 5px white;
+
+}
+#smallLogo{
+	margin-top: 20px;
+}
+#footer{
+background-color: #5bbbd3;
+padding: 20px;
+text-align: center;
+font-family: helvetica;	
+}
+
+body{
+
+background-color:moccasin;
+
+}
+.mainbody{
+	background-color: white;
+	margin-top: 10px;
+
+	padding: 15px;
+	border-radius: 25px;
+}
+#divtxt{
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+#dog1{
+	padding-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#menu{
+	margin-top: 120px;
+	color: white;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 2em;
+	}
+
+.menuItem{
+	color: white;
+	padding-left: 20px;
+}
+
+.menuItem:hover{
+	color: yellow;
+	text-decoration: none;
+}
+
+#headerpic{
+	height:150px;
+	margin:15px 0 15px 0;
+}
+
+#adoptionb{
+	margin-bottom: 30px;
+}
+
+#catbutton{
+	padding-left:30px;
+}
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+#about{
+	font-family: 'Gochi Hand', cursive;
+
+}
+#dg1{
+	margin-bottom: 20px;
+}
+#furry{
+	font-family: 'Gochi Hand', cursive;
+	text-align: center;
+
+}
+
+.logo{
+	width: 30px;
+}
+
+#footerP{
+	color: white;
+	text-align: right;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 2em;
+}
+
+.title{
+	font-family: 'Gochi Hand', cursive;}
+.title2{
+	font-family: 'Gochi Hand', cursive;
+	color:white;}
+
+.mainbody2{
+	background-color: #5bbbd3;
+	margin-top: 10px;
+
+	padding: 15px;
+	border-radius: 25px;
+}
+
+#adoptions{
+	font-family: 'Gochi Hand', cursive;
+	color:#5bbbd3;
+	font-size: 100px;
+	text-align: center;}
+
+.p2{
+
+	color:white;
+}
+
+#dogbutton2, #catbutton2{
+	height: 180px;
+	margin-left: 10%;
+}
+
+.list{
+	border: dashed 3px white;
+	padding: 20px 25px 5px 25px;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+#searchB{
+	background-color: black;
+	color:white;
+	float: right;
+	margin-right: 90px;
+
+}
