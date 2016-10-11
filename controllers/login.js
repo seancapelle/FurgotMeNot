@@ -21,7 +21,7 @@ router.get('/log-out', function(req,res) {
 
 // login
 router.post('/login', function(req, res) {
-  models.users.findOne({
+  models.Users.findOne({
     where: {email: req.body.email}
   }).then(function(user) {
 
@@ -67,7 +67,8 @@ router.post('/login', function(req, res) {
 
 // register a user
 router.post('/create', function(req,res) {
-	models.users.findAll({
+	console.log('/create hit');
+	models.Users.findAll({
     where: {email: req.body.email}
   }).then(function(users) {
 

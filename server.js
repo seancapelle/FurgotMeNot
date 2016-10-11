@@ -78,7 +78,7 @@ app.use(function(err, req, res, next) {
 
 
 //set port
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 
 // we sync the models with our db 
@@ -91,5 +91,5 @@ models.sequelize.sync().then(function () {
   });
 });
 
-console.log('listening on port 3000');
+console.log('listening on port 8080');
 module.exports = app;

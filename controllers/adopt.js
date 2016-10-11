@@ -6,10 +6,10 @@ router.get('/', function(req, res) {
   res.render('adopt');
 });
 
-router.post('/adopt/list', function(req, res) 
+router.post('/list', function(req, res) 
 
   {
-    res.render('adopt/listed')
+    res.render('test/new')
   });
 
 module.exports = router;

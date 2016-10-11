@@ -1,9 +1,13 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Users = sequelize.define('Users', {
+  var Users = sequelize.define('users', {
     users_name: DataTypes.STRING,
     password: DataTypes.STRING,
-    age: DataTypes.INTEGER,
+    user_type: {
+           type: DataTypes.CHAR,
+           length: 1,
+           allowNull: false
+       },
     address: DataTypes.STRING,
     location: DataTypes.STRING,
     phone: DataTypes.STRING,
@@ -12,9 +16,24 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
+        //Owner to Animals = one to many
         // associations can be defined here
+        Users.hasMany(models.Animals, {
+                  onDelete: "CASCADE",
+                  hooks: true,
+                  foreignKey: {
+                      allowNull: false
+                  }
+              })
       }
     }
   });
   return Users;
 };
+
+// password_hash: {
+//            type: DataTypes.CHAR,
+//            length: 60,
+//            allowNull: false
+//        },
+
