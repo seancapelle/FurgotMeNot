@@ -21,7 +21,9 @@ router.get('/log-out', function(req,res) {
 
 // login
 router.post('/login', function(req, res) {
+
   models.users.findOne({
+
     where: {email: req.body.email}
   }).then(function(user) {
 
@@ -32,14 +34,14 @@ router.post('/login', function(req, res) {
 		// Solution:
 		// =========
 		// Use bcrypt to compare the user's password input
-		// with the hash stored in the user's row. 
-		// If the result is true, 
+		// with the hash stored in the user's row.
+		// If the result is true,
     bcrypt.compare(req.body.password, users.password_hash, function(err, result) {
         // if the result is true (and thus pass and hash match)
         if (result == true){
 
-        	// save the user's information 
-					// to req.session, as the comments below show 
+        	// save the user's information
+					// to req.session, as the comments below show
 
 					// so what's happening here?
 					// we enter the user's session by setting properties to req.
@@ -67,7 +69,11 @@ router.post('/login', function(req, res) {
 
 // register a user
 router.post('/create', function(req,res) {
+
 	models.users.findAll({
+
+	console.log('/create hit');
+
     where: {email: req.body.email}
   }).then(function(users) {
 
@@ -83,7 +89,7 @@ router.post('/create', function(req,res) {
 			// then use that salt to hash the user's password.
 			bcrypt.genSalt(10, function(err, salt) {
 					bcrypt.hash(req.body.password, salt, function(err, hash) {
-						
+
 						// Using the User model, create a new user,
 						// storing the email they sent and the hash you just made
 						models.users.create({
