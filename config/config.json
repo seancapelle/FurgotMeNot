@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": "codex21!",
-    "database": "FMN_DB",
+    "username": "CodingBootCamp",
+    "password": "",
+    "database": "FMN_db",
     "host": "localhost",
     "dialect": "mysql"
   },
