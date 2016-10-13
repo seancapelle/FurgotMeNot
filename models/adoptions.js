@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(sequelize, DataTypes) {
   var adoptions = sequelize.define('adoptions', {
     routeName: DataTypes.STRING,
@@ -6,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     username: DataTypes.STRING,
     password: DataTypes.STRING,
     age: DataTypes.INTEGER,
-    address:DataTypes.STRING,
+    address: DataTypes.STRING,
     location: DataTypes.STRING
   }, {
     classMethods: {
@@ -15,5 +16,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return users;
+  return adoptions;
 };
