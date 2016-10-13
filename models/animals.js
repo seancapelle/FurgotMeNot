@@ -6,7 +6,6 @@ module.exports = function(sequelize, DataTypes) {
     animals_name: DataTypes.STRING,
     type_id: DataTypes.INTEGER,
     breed_id: DataTypes.INTEGER,
-    users_id: DataTypes.INTEGER,
     adopted: DataTypes.BOOLEAN,
     shots: DataTypes.BOOLEAN,
     fixed: DataTypes.BOOLEAN,
@@ -19,6 +18,12 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
+        Animals.belongsTo(models.Users, {
+                  onDelete: "CASCADE",
+                  foreignKey: {
+                      allowNull: false
+                  }
+              })
       }
     }
   });

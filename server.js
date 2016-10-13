@@ -80,8 +80,7 @@ app.use(function(err, req, res, next) {
 //set port
 app.set('port', process.env.PORT || 3000);
 
-
-// we sync the models with our db 
+// we sync the models with our db
 // (thus creating the apropos tables)
 models.sequelize.sync().then(function () {
   // set our app to listen to the port we set above
@@ -92,4 +91,5 @@ models.sequelize.sync().then(function () {
 });
 
 console.log('listening on port 3000');
+
 module.exports = app;
