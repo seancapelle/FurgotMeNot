@@ -40,46 +40,89 @@
 
     
 
-      
+    
       </div>
+      
 
       <div class="row">
        <div class="container">
+          <div class="col-md-1"></div>
 
+          <div class="col-md-8" id="newUserT">
 
- <form class="form-horizontal list">
+              <div class="col-md-12" ><h1 class="adoptions3">New user</h1></div><br>
 
-            <h1 class="title" style="text-align:center;">List a Pet</h1>
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
+         <form  action="login/create" method="POST">
+
+                  <div class="form-group row">
+                    <div class="col-md-5" >
+                      <label for="un" class="col-sm-4 control-label">Username:</label>
+                      <input type="text" id="un" name="users_name">
+                    </div>
                   </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <label for="em" class="col-sm-4 control-label">Email:</label>
+                      <input type="text" id="em" name="email_address">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <label for="pass" class="col-sm-4 control-label">Password:</label>
+                      <input type="password" id="pass" name="password">
+                    </div>
+                  </div>
+                
+                  <div class="form-group row">
+                     <div class="col-sm-5">
+                        <label for="age" class="col-sm-4 control-label">Age:</label>
+                         <input type="text" id="age" name="age">
+                      </div>
+                  </div>
+
+                  <div class="form-group row">
+                     <div class="col-sm-5">
+                        <label for="addr"  class="col-sm-4 control-label">Address:</label>
+                         <input type="text" id="addr" name="address">
+                      </div>
+                  </div>
+                  
+                   <div class="form-group row">
+                     <div class="col-sm-5">
+                        <label for="phone" class="col-sm-4 control-label">Phone:</label>
+                         <input type="tel" id="phone" name="phone">
+                      </div>
+                  </div>
+
+
+                  <div class="form-group row">
+                     <div class="col-sm-5">
+                        <label for="phone" class="col-sm-4 control-label">Zip Code:</label>
+                         <input type="text" id="zip" name="zip">
+                      </div>
+                  </div>
+
+
+                  <div class="form-group row">
+                     <div class="col-sm-5">
+                        <label for="locat" class="col-sm-4 control-label">Pet Location:</label>
+                         <input type="text" id="location" name="location">
+                      </div>
+                  </div>
+
+                  
+
+                  <button type="submit">Sign Up!</button>
+                </form>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">List It!</button>
-</div>
+               </div> 
+
                
                 
               </div>
-              </div>
-        </div>
+            </div>
         
         
 
@@ -103,6 +146,8 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
+           </div>
+          </div>  
 
 
                   
