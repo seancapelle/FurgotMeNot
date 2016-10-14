@@ -206,4 +206,16 @@
                 </form>
 
 
+<!--
+<form class="create-update-form" action="/image" method="POST" enctype="multipart/form-date">
+<input type="file" id="file" name="photo" multiple="" accept="image/*">
+<button type="submit">Upload</button>
+</form>
+-->
+<form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image" method="post">
+          <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+          <input type="submit" name="submit" value="Upload">
+</form> 
+
+
 		</div>
