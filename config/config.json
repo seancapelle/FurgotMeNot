@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "CodingBootCamp",
-    "password": "CodeMe2016",
+    "username": "root",
+    "password": "",
     "database": "FMN_db",
     "host": "localhost",
     "dialect": "mysql"
@@ -15,8 +15,8 @@
   },
   "production": {
     "username": "ey6jntsuk41hi8vb",
-    "password": "qo5coqgk9qst74rx",
-    "database": "database_production",
+    "password": "fkarklwmpwnsry9s",
+    "database": "b64k0tvj0s4rdphh",
     "host": "sp6xl8zoyvbumaa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
