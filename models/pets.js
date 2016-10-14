@@ -1,10 +1,9 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Animals = sequelize.define('Animals', {
+  var Pets = sequelize.define('Pets', {
     age: DataTypes.INTEGER,
-    routeName: DataTypes.STRING,
-    animals_name: DataTypes.STRING,
-    type_id: DataTypes.INTEGER,
+    pets_name: DataTypes.STRING,
+    genus_id: DataTypes.INTEGER,
     breed_id: DataTypes.INTEGER,
     users_id: DataTypes.INTEGER,
     adopted: DataTypes.BOOLEAN,
@@ -22,5 +21,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return Animals;
+  return Pets;
 };

@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('Animals', {
+    return queryInterface.createTable('Pets', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,13 +11,10 @@ module.exports = {
       age: {
         type: Sequelize.INTEGER
       },
-      routeName: {
+      pets_name: {
         type: Sequelize.STRING
       },
-      animals_name: {
-        type: Sequelize.STRING
-      },
-      type_id: {
+      genus_id: {
         type: Sequelize.INTEGER
       },
       breed_id: {
@@ -61,6 +58,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('Animals');
+    return queryInterface.dropTable('Pets');
   }
 };

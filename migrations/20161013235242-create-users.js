@@ -18,13 +18,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       address: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       location: {
         type: Sequelize.STRING
       },
       phone: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       email_address: {
         type: Sequelize.STRING
