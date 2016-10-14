@@ -18,8 +18,10 @@ module.exports = function(sequelize, DataTypes) {
                  hooks: true,
                  foreignKey: {
                  allowNull: false
-      }
-    }
-  });
-  return Users;
-};
+               }
+             })
+           }
+         }
+       });
+       return Users;
+     };

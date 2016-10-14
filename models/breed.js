@@ -17,6 +17,7 @@ module.exports = function(sequelize, DataTypes) {
                   foreignKey: {
                   allowNull: false
                   }
+        })
       }
     }
   });
