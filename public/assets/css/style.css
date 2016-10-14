@@ -1,3 +1,31 @@
+// get a larger input, and align it with submit button
+.form-inline .form-group > div.col-xs-8 {
+    padding-left: 0;
+    padding-right: 0;
+}
+// vertical align label
+.form-inline label {
+    line-height: 34px;
+}
+// force inline control to fit container width
+// http://getbootstrap.com/css/#forms-inline
+.form-inline .form-control {
+    width: 100%;
+}
+// Reset margin-bottom for our multiline form
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+.under{
+	border-bottom: 20px solid;
+}
+#aBanner{
+	margin-top:20px;
+
+}
 #header{
 
 background-color: #5bbbd3;
@@ -93,11 +121,16 @@ background-color:moccasin;
 
 #footerP{
 	color: white;
-	text-align: right;
+	text-align: center;
 	font-family: 'Gochi Hand', cursive;
 	font-size: 2em;
 }
 
+#listItB{
+	background-color: #5bbbd3;
+	color:white;
+	margin-left: 25%;
+}
 .title{
 	font-family: 'Gochi Hand', cursive;}
 .title2{
@@ -112,12 +145,22 @@ background-color:moccasin;
 	border-radius: 25px;
 }
 
-#adoptions{
+.adoptions{
 	font-family: 'Gochi Hand', cursive;
 	color:#5bbbd3;
 	font-size: 100px;
 	text-align: center;}
 
+.adoptions2{
+	font-family: 'Gochi Hand', cursive;
+	color:black;
+	font-size: 50px;
+	text-align: center;}
+
+#disclaimer{
+	color:white;
+	font-size:10px;
+}
 .p2{
 
 	color:white;
