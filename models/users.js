@@ -4,9 +4,9 @@ module.exports = function(sequelize, DataTypes) {
     users_name: DataTypes.STRING,
     password: DataTypes.STRING,
     age: DataTypes.INTEGER,
-    address: DataTypes.STRING,
+    address: DataTypes.INTEGER,
     location: DataTypes.STRING,
-    phone: DataTypes.STRING,
+    phone: DataTypes.INTEGER,
     email_address: DataTypes.STRING,
     zipcode: DataTypes.INTEGER
   }, {

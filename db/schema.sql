@@ -3,13 +3,13 @@
 CREATE DATABASE 'FMN_db';
 USE FMN_db;
 
-CREATE TABLE animals
+CREATE TABLE Pets
 (
 	id int NOT NULL AUTO_INCREMENT,
 	type_id int NOT NULL,
 	breed_id int NOT NULL,
 	users_id int NOT NULL,
-	animals_name varchar(2000) NOT NULL,
+	pets_name varchar(2000) NOT NULL,
 	age INT (11) NOT NULL,
 	adopted BOOLEAN DEFAULT false,
 	shots BOOLEAN DEFAULT true,
@@ -37,14 +37,14 @@ CREATE TABLE users
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE type
+CREATE TABLE Genus
 (
 	id int NOT NULL AUTO_INCREMENT,
 	type_name varchar(2000) NOT NULL,
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE breed
+CREATE TABLE Breed
 (
 id INT NOT NULL AUTO_INCREMENT,
 breed_name varchar (200) NOT NULL,
@@ -52,7 +52,7 @@ type_id INT NOT NULL,
 PRIMARY KEY (id)
 );
 
-CREATE TABLE adoptions
+CREATE TABLE a`doptions
 (
 id INT NOT NULL AUTO_INCREMENT,
 user_name varchar (200) NOT NULL,
