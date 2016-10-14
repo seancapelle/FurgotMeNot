@@ -4,9 +4,7 @@ var express = require('express');
 var router  = express.Router();
 
 //this is the users_controller.js file
-router.get('/new', function(req,res) {
-	res.render('login/new');
-});
+
 
 router.get('/existing', function(req,res) {
 	res.render('users/existing');
@@ -20,6 +18,60 @@ router.get('/log-out', function(req,res) {
 
 
 // login
+
+router.post('/login', function(req, res) {
+  models.Users.findOne({
+    where: {email_address: req.body.email_address}
+  }).then(function(user) {
+
+		if (user == null){
+			res.redirect('/login/sign-up')
+		}
+
+		// Solution:
+		// =========
+		// Use bcrypt to compare the user's password input
+		// with the hash stored in the user's row. 
+		// If the result is true, 
+    bcrypt.compare(req.body.password, users.password, function(err, result) {
+        // if the result is true (and thus pass and hash match)
+        if (result == true){
+
+        	// save the user's information 
+					// to req.session, as the comments below show 
+
+					// so what's happening here?
+					// we enter the user's session by setting properties to req.
+
+					// we save the logged in status to the session
+          req.session.logged_in = true;
+          console.log(req.session.logged_in);
+          // the username to the session
+					req.session.username = user.username;
+					console.log(user.username);
+					// the user id to the session
+          req.session.user_id = user.id;
+          console.log(user.id);
+          // and the user's email.
+          req.session.user_email = user.email;
+          console.log(user.email);
+
+          res.redirect('/');
+        }
+        // if the result is anything but true (password invalid)
+        else{
+        	// redirect user to sign in
+					res.redirect('/')
+				}
+    });
+  })
+});
+
+
+
+
+
+
 router.post('/create', function(req,res) {
 	console.log('/create hit');
 	console.log(req.body);
