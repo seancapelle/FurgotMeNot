@@ -19,13 +19,15 @@ router.get('/log-out', function(req,res) {
 
 // login
 
-router.post('/login', function(req, res) {
+router.post('/check', function(req, res) {
+	console.log(req.body.users_name);
   models.Users.findOne({
-    where: {email_address: req.body.email_address}
-  }).then(function(user) {
-
-		if (user == null){
-			res.redirect('/login/sign-up')
+    where: {users_name: req.body.users_name}
+  }).then(function(users_name) {
+  		console.log(users_name);
+		if (users_name == null){
+			console.log('user does not exist');
+			res.redirect('/new')
 		}
 
 		// Solution:
@@ -33,7 +35,7 @@ router.post('/login', function(req, res) {
 		// Use bcrypt to compare the user's password input
 		// with the hash stored in the user's row. 
 		// If the result is true, 
-    bcrypt.compare(req.body.password, users.password, function(err, result) {
+    bcrypt.compare(req.body.password, users_name.dataValues.password, function(err, result) {
         // if the result is true (and thus pass and hash match)
         if (result == true){
 
@@ -47,21 +49,22 @@ router.post('/login', function(req, res) {
           req.session.logged_in = true;
           console.log(req.session.logged_in);
           // the username to the session
-					req.session.username = user.username;
-					console.log(user.username);
+					req.session.users_name = users_name.users_name;
+					console.log(users_name.users_name);
 					// the user id to the session
-          req.session.user_id = user.id;
-          console.log(user.id);
+          req.session.user_id = users_name.id;
+          console.log(users_name.id);
           // and the user's email.
-          req.session.user_email = user.email;
-          console.log(user.email);
+          req.session.users_email = users_name.email_address;
+		          console.log (users_name.email_address);
 
           res.redirect('/');
         }
         // if the result is anything but true (password invalid)
         else{
         	// redirect user to sign in
-					res.redirect('/')
+					res.redirect('/new')
+					console.log('incorrect password');
 				}
     });
   })

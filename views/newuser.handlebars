@@ -2,9 +2,9 @@
        <div class="container">
           <div class="col-md-1"></div>
 
-          <div class="col-md-8" id="newUserT">
+          <div class="col-md-4" id="newUserT">
 
-              <div class="col-md-12" ><h1 class="adoptions3">New user</h1></div><br>
+              <div class="col-md-12" ><h1 class="adoptions3">New Users</h1></div><br>
 
          <form  action="login/create" method="POST">
 
@@ -70,6 +70,37 @@
 
                   <button type="submit">Sign Up!</button>
                 </form>
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4" id="newUserT">
+
+                  <div class="col-md-12" ><h1 class="adoptions3">Existing Users</h1></div><br>
+                  
+
+
+                  <form  action="login/check" method="POST">
+
+
+                  <div class="form-group row">
+                    <div class="col-md-5" >
+                      <label for="un" class="col-sm-4 control-label">Username:</label>
+                      <input type="text" id="un" name="users_name">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <label for="pass" class="col-sm-4 control-label">Password:</label>
+                      <input type="password" id="pass" name="password">
+                    </div>
+                  </div>
+
+                  <button type="submit">Log In!</button>
+                  </form>
+                </div>
+
+                <div class="col-md-1">
                 </div>
                </div> 
 
