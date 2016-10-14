@@ -20,9 +20,9 @@ module.exports = function(sequelize, DataTypes) {
         Pets.belongsTo(models.Users, {
                   onDelete: "CASCADE",
                   foreignKey: {
-                      allowNull: false
+                    allowNull: false
                   }
-              })
+          })
       }
     }
   });
