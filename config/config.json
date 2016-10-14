@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "CodingBootCamp",
-    "password": "",
+    "password": "CodeMe2016",
     "database": "FMN_db",
     "host": "localhost",
     "dialect": "mysql"
