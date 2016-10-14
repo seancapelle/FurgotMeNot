@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        Pets.belongsTo(models.users, {
+        Pets.belongsTo(models.Users, {
                   onDelete: "CASCADE",
                   foreignKey: {
                     allowNull: false
