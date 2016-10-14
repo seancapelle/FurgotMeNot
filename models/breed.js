@@ -1,10 +1,13 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var breed = sequelize.define('breed', {
-
+  var Breed = sequelize.define('Breed', {
+    size: DataTypes.STRING,
     breed_name: DataTypes.STRING,
-    
-
+    genus_id: DataTypes.INTEGER,
+    energy: DataTypes.STRING,
+    group: DataTypes.STRING,
+    characteristics: DataTypes.STRING,
+    breed_id: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {
@@ -12,5 +15,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return breed;
+  return Breed;
 };

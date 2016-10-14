@@ -8,11 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
+      size: {
+        type: Sequelize.
+      },
+      breed_name: {
         type: Sequelize.STRING
       },
-      size: {
-        type: Sequelize.STRING
+      genus_id: {
+        type: Sequelize.INTEGER
       },
       energy: {
         type: Sequelize.STRING
@@ -20,11 +23,11 @@ module.exports = {
       group: {
         type: Sequelize.STRING
       },
-      genus_id: {
-        type: Sequelize.INTEGER
+      characteristics: {
+        type: Sequelize.STRING
       },
       breed_id: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

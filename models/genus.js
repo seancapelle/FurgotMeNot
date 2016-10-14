@@ -1,7 +1,8 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Type = sequelize.define('Type', {
-    name: DataTypes.STRING
+  var Genus = sequelize.define('Genus', {
+    Genus_id: DataTypes.INTEGER,
+    species: DataTypes.STRING
   }, {
     classMethods: {
       associate: function(models) {
@@ -9,5 +10,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return Type;
+  return Genus;
 };
