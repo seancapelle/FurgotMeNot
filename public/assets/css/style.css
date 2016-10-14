@@ -112,8 +112,15 @@ background-color:moccasin;
 #furry{
 	font-family: 'Gochi Hand', cursive;
 	text-align: center;
+}
+#newUserT{
+	margin: 50px 0 50px 0 ;
+	background-color: white;
+	padding: 20px 0 20px 20px;
+	border-radius: 25px;
 
 }
+
 
 .logo{
 	width: 30px;
@@ -156,6 +163,12 @@ background-color:moccasin;
 	color:black;
 	font-size: 50px;
 	text-align: center;}
+
+.adoptions3{
+	font-family: 'Gochi Hand', cursive;
+	color:black;
+	font-size: 50px;
+	text-align: left;}
 
 #disclaimer{
 	color:white;
