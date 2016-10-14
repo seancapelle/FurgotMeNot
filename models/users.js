@@ -13,13 +13,13 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        Users.hasMany(models.pets, {
-                 onDelete: "CASCADE",
-                 hooks: true,
-                 foreignKey: {
-                 allowNull: false
-               }
-             })
+        // Users.hasMany(models.pets, {
+        //          onDelete: "CASCADE",
+        //          hooks: true,
+        //          foreignKey: {
+        //          allowNull: false
+        //        }
+        //      })
            }
          }
        });
