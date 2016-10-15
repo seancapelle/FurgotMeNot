@@ -14,10 +14,10 @@ module.exports = {
       pets_name: {
         type: Sequelize.STRING
       },
-      genus_id: {
+      genus: {
         type: Sequelize.INTEGER
       },
-      breed_id: {
+      breed: {
         type: Sequelize.INTEGER
       },
       users_id: {
@@ -46,6 +46,21 @@ module.exports = {
       },
       house_trained: {
         type: Sequelize.BOOLEAN
+      },
+      image_one: {
+        type: Sequelize.BLOB
+      },
+      image_two: {
+        type: Sequelize.BLOB
+      },
+      image_three: {
+        type: Sequelize.BLOB
+      },
+      image_four: {
+        type: Sequelize.BLOB
+      },
+      image_five: {
+        type: Sequelize.BLOB
       },
       createdAt: {
         allowNull: false,

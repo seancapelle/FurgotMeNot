@@ -1,0 +1,186 @@
+<div class="row">
+  <div class="container">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-4" id="newUserT">
+      <div class="col-md-12" ><h1 class="adoptions3">Pet Information</h1>
+      </div>
+      <br>
+      <form  action="/postpet" method="POST">
+      <div class="form-group row">
+        <div class="col-md-5" >
+          <label for="un" class="col-sm-4 control-label">Name:</label>
+          <input type="text" id="un" name="pets_name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-5">
+          <label for="house">Type of Pet:</label>
+          <select name="genus" id="genus"> 
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Bird">Bird</option>
+            <option value="Rodent">Rodent</option>
+          </select>
+        </div>
+      </div>
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+                <label for="em" class="col-sm-4 control-label">Breed:</label>
+                <input type="text" id="em" name="breed_name">
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="age" class="col-sm-4 control-label">Age:</label>
+              <input type="text" id="age" name="age">
+            </div>
+          </div>
+
+
+        <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="fix">Fixed:</label>
+              <select name="fixed" id="fixed">
+                <option value="0">--No--</option>
+                <option value="1">--Yes--</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="shot">Shots:</label>
+              <select name="shots" id="shots">
+                <option value="0">--No--</option>
+                <option value="1">--Yes--</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="kid">Kid-Friendly:</label>
+              <select name="kid_friendly" id="kid_friendly">
+                <option value="0">--No--</option>
+                <option value="1">--Yes--</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="cat">Cat-Friendly:</label>
+                <select name="cat_friendly" id="cat_friendly"> 
+                  <option value="0">--No--</option>
+                  <option value="1">--Yes--</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="dog">Dog-Friendly:</label>
+                <select name="dog_friendly" id="dog_friendly"> 
+                  <option value="0">--No--</option>
+                  <option value="1">--Yes--</option>
+                </select>
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="food">Food-Aggressive:</label>
+                <select name="food_aggressive" id="food_aggressive"> 
+                <option value="1">--Yes--</option>
+                <option value="0">--No--</option>
+                </select>
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <div class="col-sm-5">
+              <label for="house">House-Trained:</label>
+              <select name="house_trained" id="house_trained"> 
+              <option value="0">--No--</option>
+              <option value="1">--Yes--</option>
+              </select>
+            </div>
+          </div>
+
+
+          <button type="submit">Place for Addoption!</button>
+          </form>    
+      </div>
+
+
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-md-4" id="newUserT">
+          <div class="col-md-12" ><h1 class="adoptions3">Upload Pictures</h1>
+          </div>
+          <br>
+          <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_one" method="post">
+          <div class="form-group row">
+            <div class="col-md-5" >
+              <label for="un">Picture 1:</label>
+              <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+              <input type="submit" name="submit" value="Upload">
+            </div>   
+          </div>
+          </form> 
+
+          <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_two" method="post">
+          <div class="form-group row">
+            <div class="col-md-5" >
+              <label for="un">Picture 2:</label>
+              <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+              <input type="submit" name="submit" value="Upload">
+            </div>   
+          </div>
+          </form> 
+
+          <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_three" method="post">
+          <div class="form-group row">
+            <div class="col-md-5" >
+              <label for="un">Picture 3:</label>
+              <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+              <input type="submit" name="submit" value="Upload">
+            </div>   
+          </div>
+          </form> 
+
+          <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_four" method="post">
+          <div class="form-group row">
+            <div class="col-md-5" >
+              <label for="un">Picture 4:</label>
+              <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+              <input type="submit" name="submit" value="Upload">
+            </div>   
+          </div>
+          </form> 
+
+          <form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image_five" method="post">
+          <div class="form-group row">
+            <div class="col-md-5" >
+              <label for="un">Picture 5:</label>
+              <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
+              <input type="submit" name="submit" value="Upload">
+            </div>   
+          </div>
+          </form> 
+
+
+
+        </div>  
+        <div class="col-md-1">                             
+        </div>       
+  </div> 
+</div>               

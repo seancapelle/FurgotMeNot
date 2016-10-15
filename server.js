@@ -90,11 +90,20 @@ app.use('/login', login_controller);
 //   next(err);
 // });
 
-app.post('/image', function(req, res){
-  console.log('/image hit');
-  console.log(req.body) // form fields
-  console.log(req.file) // form files
-
+app.post('/image_one', function(req, res){
+  console.log(req.files);
+  models.Pets.update(
+  {
+    image_one: req.files
+  },
+  {
+    where: { id : '1' }
+  })
+ .then(function(result){ 
+    console.log('/image hit');
+    res.redirect('/listpet');
+  })
+  });
     // var file = req.file.path
 
   // for the length of files write to database
@@ -102,7 +111,7 @@ app.post('/image', function(req, res){
   // models.images.create({
 
   // })
-})
+
 
 
 

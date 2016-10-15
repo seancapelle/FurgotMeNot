@@ -47,8 +47,18 @@
 					<div class="mainbody">
 						<p id="furryData">
 						<h1 id="furry">Furry friend of the Month</h1>
-						<img class="img-responsive" id="furryImg" src="assets/img/dog1.jpg">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nulla et enim dapibus vestibulum. Morbi luctus ornare ante lacinia egestas. Nam hendrerit diam dolor, sed blandit sem iaculis sed. Nam vitae elementum mauris. Suspendisse leo ex, laoreet sed lorem cursus, blandit tempor risus. Proin eget eros luctus, gravida velit ac, imperdiet eros. Pellentesque efficitur turpis quis leo blandit, quis tempor lectus vestibulum. Etiam non dictum enim. Donec augue sem, commodo vel elementum ut, sagittis in leo. Ut id ullamcorper dui. Sed interdum imperdiet neque, facilisis varius massa. Maecenas sollicitudin massa in augue dapibus auctor.</p>
+						<img class="img-responsive" id="furryImg" src="assets/img/bosley_720.jpg">
+						<h1 class="furryTitle">Bosley</h1>
+						<br>
+						<p>Dog • Pit Bull Terrier & Staffordshire Bull Terrier Mix • Adult • Male • Medium
+						Furever Bully Love Rescue Orlando, FL</p>
+						<br>
+ 
+		<h1 class="furryTitle">ABOUT BOSLEY</h1><br>
+		<h3><em>Bosley is now available for adoption!</em></h3>
+		<p>He was originally saved from deathrow at OCAS 3 months ago. He underwent all his medical treatments then was transferred to All Terrain Canine to complete his 6 week board & train program. 
+		Bosley is 2 yrs old male, UTD, neutered & microchipped. He is crate & house trained. Knows basic commands. Although, he has progressed tremendously he still needs time to adjust to other animals in the home. He will need to be the only animal in the home at this time. He does fine w other animals in a public environment. He is currently in Edgewater FL. And is available for meet & greets! 
+		Don't let his scars fool u.. His split tongue & eye trauma are just examples that your past does NOT define your future!! Please let us know if you would like to meet Bosley!</p>
 					</div>
 
 					
@@ -83,32 +93,15 @@
 	   					  <option id="anyTypeOpt">Any</option>
 						  <option id="catOpt">Cat</option>
 						  <option id="dogOpt">Dog</option>
+						  <option id="birdOpt">Bird</option>
+						  <option id="rodentOpt">Rodent</option>
 					</select>
   			</div>
-  			<!--Age-->
-  			<div class="form-group col-sm-4">
-   				 <label for="Age">Age</label>
-   				 <input type="text" class="form-control" id="ageOpt" placeholder="Age">
-  			</div>
-
+  			
   			<!--Breed-->
   			<div class="form-group col-sm-5">
    				 <label for="Breed">Breed</label>
    				 <input type="text" class="form-control" id="breedopt" placeholder="Breed">
-  			</div>
-
-  			<div class="form-group col-sm-4">
-   				 <label for="color">Color</label>
-   				 <input type="text" class="form-control" id="colorOpt" placeholder="Color">
-  			</div>
-
-  			<div class="form-group col-sm-3">
-				<label for="Sex">Sex</label>
-	   				 <select class="form-control">
-	   				 	  <option id="anySexOpt">Any</option>
-						  <option id="femOpt">Female</option>
-						  <option id="maleOpt">Male</option>
-					</select>
   			</div>
 
   			<div class="form-group col-sm-4">
@@ -133,64 +126,4 @@
 				</div>
 
 			</div>
-		
-		
-<!-- Working database input -->
-    <form class="create-update-form" action="login/create" method="POST">
-                  <div class="form-group">
-                    <label for="un">Username:</label>
-                    <input type="text" id="un" name="users_name">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="em">Email:</label>
-                    <input type="text" id="em" name="email_address">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="pass">Password:</label>
-                    <input type="password" id="pass" name="password">
-                  </div>
-                
-                  <div class="form-group">
-                    <label for="age">Age:</label>
-                    <input type="age" id="age" name="age">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="addr">address:</label>
-                    <input type="address" id="addr" name="address">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="phone" id="phone" name="phone">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="zip">Zip Code:</label>
-                    <input type="zip" id="zip" name="zip">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="locat">Pet Location:</label>
-                    <input type="location" id="location" name="location">
-                  </div>
-
-                  <button type="submit">Sign Up!</button>
-                </form>
-
-
-<!--
-<form class="create-update-form" action="/image" method="POST" enctype="multipart/form-date">
-<input type="file" id="file" name="photo" multiple="" accept="image/*">
-<button type="submit">Upload</button>
-</form>
--->
-<form id="uploadProfilePicForm" enctype="multipart/form-data" action="/image" method="post">
-          <input type="file" multiple="multiple" id="userPhotoInput" name="userPhoto"  accept="image/*" />
-          <input type="submit" name="submit" value="Upload">
-</form> 
-
-
 </div>

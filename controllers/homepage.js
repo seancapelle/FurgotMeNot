@@ -3,7 +3,6 @@ var express = require('express');
 var router  = express.Router();
 
 // routing for what do display when you hit the / page
-
 router.get('/', function(req, res) {
   res.render('index');
 });
@@ -15,16 +14,16 @@ router.get('/new', function(req,res) {
 });
 
 // routing to move you to the donations page
-
 router.get('/donate', function(req,res){
 	res.render('donations');
 });
 
+// route to the list pets page
 router.get('/listpet', function(req,res){
 	res.render('listpet');
 });
 
-
+// post a new pet to the pets table
 router.post('/postpet', function (req, res) {
   
   models.Pets.create({
@@ -41,6 +40,7 @@ router.post('/postpet', function (req, res) {
     house_trained: req.body.house_trained,
     user_id: req.session.user_id
   })
+
   // connect the .create to this .then
   .then(function() {
     res.redirect('/');
@@ -51,12 +51,12 @@ router.post('/postpet', function (req, res) {
 // routing to search the database for a dog, cat, ferret ect. 
 // this route is in progress aka not fully functional
 router.post('/search', function(req,res) {
-	console.log(req.body.species);
-	models.Genus.findAll({
-		where: {species: req.body.species}
+	console.log(req.body.genus);
+	models.Pets.findAll({
+		where: {genus: req.body.genus}
 	}).then(function(object){
 		console.log(object);
-		var hbsObject = {result : object[0].dataValues.species}
+		var hbsObject = {result : object}
 		console.log(hbsObject);
 		res.render('index', hbsObject);
 	});
