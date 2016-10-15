@@ -118,7 +118,7 @@ app.post('/image', function(req, res){
 
 
 //set port
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 // we sync the models with our db
 // (thus creating the apropos tables)
@@ -130,6 +130,6 @@ models.sequelize.sync().then(function () {
   });
 });
 
-console.log('listening on port 3000');
+console.log('listening on port 8080');
 
 module.exports = app;

@@ -3,8 +3,8 @@ module.exports = function(sequelize, DataTypes) {
   var Pets = sequelize.define('Pets', {
     age: DataTypes.INTEGER,
     pets_name: DataTypes.STRING,
-    genus: DataTypes.STRING,
-    breed: DataTypes.STRING,
+    genus_id: DataTypes.INTEGER,
+    breed_id: DataTypes.INTEGER,
     adopted: DataTypes.BOOLEAN,
     shots: DataTypes.BOOLEAN,
     fixed: DataTypes.BOOLEAN,
@@ -12,13 +12,7 @@ module.exports = function(sequelize, DataTypes) {
     cat_friendly: DataTypes.BOOLEAN,
     dog_friendly: DataTypes.BOOLEAN,
     food_aggressive: DataTypes.BOOLEAN,
-    house_trained: DataTypes.BOOLEAN,
-    image_one: DataTypes.BLOB,
-    image_two: DataTypes.BLOB,
-    image_three: DataTypes.BLOB,
-    image_four: DataTypes.BLOB,
-    image_five: DataTypes.BLOB,
-    users_id: DataTypes.STRING
+    house_trained: DataTypes.BOOLEAN
   }, {
     classMethods: {
       associate: function(models) {
