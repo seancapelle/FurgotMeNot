@@ -99,7 +99,7 @@ app.post('/image_one', function(req, res){
   {
     where: { id : '1' }
   })
- .then(function(result){ 
+ .then(function(result){
     console.log('/image hit');
     res.redirect('/listpet');
   })
@@ -127,17 +127,19 @@ app.post('/image_one', function(req, res){
 
 
 //set port
-app.set('port', process.env.PORT || 8080);
+//app.set('port', process.env.PORT || 8080);
 
 // we sync the models with our db
 // (thus creating the apropos tables)
-models.sequelize.sync().then(function () {
-  // set our app to listen to the port we set above
-  var server = app.listen(app.get('port'), function() {
-    // then save a log of the listening to our debugger.
-    debug('Express server listening on port ' + server.address().port);
-  });
-});
+// models.sequelize.sync().then(function () {
+//   // set our app to listen to the port we set above
+//   var server = app.listen(app.get('port'), function() {
+//     // then save a log of the listening to our debugger.
+//     debug('Express server listening on port ' + server.address().port);
+//   });
+// });
+var PORT  =process.env.PORT || 8080
+app.listen(PORT)
 
 console.log('listening on port 8080');
 
